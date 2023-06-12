@@ -1,0 +1,109 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.content {
+    margin: 14px;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 325px;
+   
+}
+
+input {
+    border: none;
+    padding: 16px;
+    background-color: rgb(221, 221, 221);
+    color: #010101;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: rgb(0, 145, 255);
+    font-size: 24px;
+    padding: 16px;
+    margin-left: 10px;
+    height: 65px;
+    color: #222222;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+#ketawa {
+    display: none;
+}
+
+#loaders {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    border-radius: 50%;
+    border-top: 15px solid rgb(0, 145, 255);
+    animation: 1s spin infinite linear;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* media queries */
+
+@media (max-width:768px) {
+    input {
+        border: none;
+        padding: 16px;
+        background-color: white;
+        color: #010101;
+        font-size: 24px;
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    h1 {
+        margin-left: 1rem;
+    }
+}
+
